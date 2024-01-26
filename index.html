@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Decodificador de Texto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img src="logo-alura.png" alt="Logo da Alura" class="logo">
+            <!-- <div class="contato">
+                <a href="https://www.linkedin.com/in/aline-bevilacqua/"><img src="linkedin-logo.png" alt="Logo do LinkedIn" class="linkedin"></a>
+                <a href="https://github.com/Aliine98"><img src="github-logo.png" alt="Logo do GitHub" class="github"></a>
+            </div> -->
+        </header>
+        <main>
+            <div class="textField">
+                <textarea wrap="hard" id="input" placeholder="Digite seu texto..." class="texto"></textarea>
+                <p id="warning" style="display: none"><img src=exclamacao.png alt="Ponto de exclamação" >Apenas letras minusculas!</p>
+                <div class="btn-criptografia">
+                    <button id="encoder" class="btn">Criptografar</button>
+                    <button id="decoder" class="btn">Descriptografar</button>
+                </div>
+            </div>
+            <div class="textEncoded">
+                <textarea wrap="hard" id="output" readonly placeholder="O texto codificado ou decodificado aparecerá aqui!" class="texto-resultado"></textarea>
+                <p id="warning2" style="display: none"><img src=exclamacao.png alt="Ponto de exclamação" >Campo Vazio!</p>
+                <button id="copiar" class="btn">Copiar</button>
+                <button class="btn" id="limpar">Limpar campos</button>
+            </div>
+        </main>
+        <footer>
+            <p>Desenvolvido por Bruno de Frontin Travassos &copy 2024</p>
+            <p>Challenge Programa ONE e Alura</p>
+        </footer>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
